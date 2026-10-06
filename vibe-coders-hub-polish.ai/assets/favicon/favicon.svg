@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0f17"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="url(#accentGrad)" stroke-width="6" stroke-opacity="0.4"/>
+  <g filter="url(#glow)">
+    <path d="M120 160 L210 352 L260 352 L170 160 Z" fill="url(#accentGrad)"/>
+    <path d="M392 160 L302 352 L252 352 L342 160 Z" fill="url(#accentGrad)"/>
+    <path d="M220 220 L292 220 L272 260 L200 260 Z" fill="url(#accentGrad)"/>
+  </g>
+  <!-- Clean VC Symbol overlay -->
+  <g transform="translate(100, 140)">
+    <!-- V -->
+    <path d="M10 20 L70 200 L110 200 L170 20 Z" fill="none" stroke="url(#accentGrad)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- C -->
+    <path d="M290 60 C250 10 180 20 170 110 C160 200 240 220 290 170" fill="none" stroke="url(#accentGrad)" stroke-width="28" stroke-linecap="round"/>
+  </g>
+</svg>

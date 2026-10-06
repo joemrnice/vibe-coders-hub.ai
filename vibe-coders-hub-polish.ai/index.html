@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Podstawowe metatagi -->
+  <title>Vibe Coders Hub — Dobre wibracje. Czysty kod. Nieograniczony wpływ.</title>
+  <meta name="title" content="Vibe Coders Hub — Dobre wibracje. Czysty kod. Nieograniczony wpływ.">
+  <meta name="description" content="Vibe Coders Hub to społeczność twórców wykorzystujących sztuczną inteligencję, inżynierów promptów oraz programistów, którzy przekuwają pomysły w rzeczywiste projekty cyfrowe.">
+  <meta name="keywords" content="Vibe Coders Hub, programiści AI, inżynierowie promptów, vibe coding, twórcy AI, twórcy oprogramowania, indie hackerzy, open source">
+  <meta name="author" content="Vibe Coders Hub">
+  <meta name="theme-color" content="#0d0f17">
+
+  <!-- Zastępczy adres kanoniczny -->
+  <link rel="canonical" href="https://yourusername.github.io/vibe-coders-hub/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourusername.github.io/vibe-coders-hub/">
+  <meta property="og:title" content="Vibe Coders Hub — Dobre wibracje. Czysty kod. Nieograniczony wpływ.">
+  <meta property="og:description" content="Vibe Coders Hub to społeczność twórców wykorzystujących AI, inżynierów promptów i programistów zamieniających pomysły w rzeczywiste projekty cyfrowe.">
+  <meta property="og:image" content="assets/images/coders.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourusername.github.io/vibe-coders-hub/">
+  <meta property="twitter:title" content="Vibe Coders Hub — Dobre wibracje. Czysty kod. Nieograniczony wpływ.">
+  <meta property="twitter:description" content="Vibe Coders Hub to społeczność twórców wykorzystujących AI, inżynierów promptów i programistów zamieniających pomysły w rzeczywiste projekty cyfrowe.">
+  <meta property="twitter:image" content="assets/images/coders.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+
+  <!-- Czcionki Google: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Główny arkusz stylów -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Dynamiczna siatka tła i poświaty -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-1" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-2" aria-hidden="true"></div>
+
+  <!-- Nagłówek / nawigacja -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Strona główna Vibe Coders Hub">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Vibe Coders <span class="accent-text">Hub</span></span>
+      </a>
+
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Przełącz menu nawigacyjne">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Nawigacja główna">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Start</a></li>
+          <li><a href="#about" class="nav-link">O nas</a></li>
+          <li><a href="#values" class="nav-link">Wartości</a></li>
+          <li><a href="#builders" class="nav-link">Twórcy</a></li>
+          <li><a href="#community" class="nav-link">Społeczność</a></li>
+          <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Dołącz do nas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sekcja 1: Hero -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-dot"></span>
+            <span>Społeczność programistów wspieranych przez AI</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="gradient-text">Dobre wibracje.</span><br>
+            <span class="gradient-text-alt">Czysty kod.</span><br>
+            <span class="white-text">Nieograniczony wpływ.</span>
+          </h1>
+          <p class="hero-subheadline">
+            Społeczność twórców wykorzystujących AI, inżynierów promptów i programistów.
+          </p>
+          <p class="hero-description">
+            Twórz odważnie. Eksperymentuj swobodnie. Ucz się razem z nami. Vibe Coders Hub łączy twórców i programistów wspieranych przez AI, aby zamieniać pomysły w realne, użyteczne i wartościowe projekty.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Dołącz do nas</a>
+            <a href="#about" class="btn btn-secondary btn-lg">Poznaj Hub</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-window" id="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">vibe-coders-cli ~ v2.5.0</div>
+              <div class="terminal-status"><span class="pulse-icon"></span> AI AKTYWNE</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line"><span class="prompt-user">user@vibe-hub</span>:<span class="prompt-path">~/projects</span>$ <span class="command-text" id="typed-command">vibe build</span></div>
+              <div class="terminal-output" id="terminal-output">
+                <p class="out-info">&gt; inicjalizacja akceleratora przepływu pracy AI...</p>
+                <p class="out-success">&gt; generowanie pomysłów...</p>
+                <p class="out-success">&gt; pisanie czystego kodu...</p>
+                <p class="out-highlight">&gt; dostarczanie wartości...</p>
+                <p class="out-code"><code>const hub = new VibeCodersHub({ vibe: "100%", quality: "A+" });</code></p>
+                <p class="out-code"><code>await hub.buildFutureTogether();</code></p>
+              </div>
+              <div class="terminal-interactive-note">
+                <span class="badge-tag">Wskazówka</span> Naciśnij <kbd class="kbd">Spację</kbd> lub kliknij terminal, aby uruchomić symulację promptu
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 2: O nas / Czym jest Vibe Coders Hub? -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">KIM JESTEŚMY</span>
+          <h2 class="section-title">Czym jest Vibe Coders Hub?</h2>
+          <p class="section-lead">
+            Vibe Coders Hub to społeczność ludzi, którzy wierzą, że świetne oprogramowanie może powstać dzięki dobremu pomysłowi, ciekawości i odpowiedniemu przepływowi pracy wspieranemu przez AI.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-banner-card">
+            <img src="assets/images/coders.jpg" alt="Członkowie społeczności Vibe Coders Hub wspólnie tworzący oprogramowanie AI" class="about-image" loading="lazy">
+            <div class="about-overlay-text">
+              <h3>Wspólnie budujemy przyszłość</h3>
+              <p>Miejsce, w którym ludzka pomysłowość spotyka sztuczną inteligencję, tworząc wartościowe doświadczenia cyfrowe.</p>
+            </div>
+          </div>
+
+          <div class="about-features">
+            <h3 class="about-features-title">W Hubie członkowie mogą:</h3>
+            <ul class="features-list">
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🚀</span>
+                <div>
+                  <strong>Poznawać programowanie wspierane przez AI</strong>
+                  <p>Opanowywać nowoczesne LLM-y, asystentów programowania i zautomatyzowane przepływy pracy agentów.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🧪</span>
+                <div>
+                  <strong>Eksperymentować i tworzyć prototypy</strong>
+                  <p>Szybko przechodzić od początkowego promptu do działających, interaktywnych prototypów oprogramowania.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">💡</span>
+                <div>
+                  <strong>Wymieniać się promptami i przepływami pracy</strong>
+                  <p>Udostępniać sprawdzone biblioteki promptów, instrukcje systemowe i wskazówki programistyczne.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">🌐</span>
+                <div>
+                  <strong>Współpracować i rozwijać open source</strong>
+                  <p>Łączyć siły przy projektach społecznościowych, narzędziach i wspólnych otwartych repozytoriach.</p>
+                </div>
+              </li>
+              <li class="feature-item">
+                <span class="feature-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <strong>Przekształcać eksperymenty w produkty</strong>
+                  <p>Dopracowywać surowy kod do gotowych do wdrożenia aplikacji webowych, narzędzi i produktów micro-SaaS.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 3: Główne wartości -->
+    <section class="section values-section" id="values">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">NASZE FUNDAMENTY</span>
+          <h2 class="section-title">Główne zasady i wartości</h2>
+          <p class="section-lead">Trzy zasady kierujące każdym projektem, który tworzymy, i każdą linią kodu, którą piszemy.</p>
+        </div>
+
+        <div class="values-grid">
+          <!-- Value 1: Good Vibes -->
+          <div class="value-card value-vibes">
+            <div class="value-card-header">
+              <span class="value-number">01</span>
+              <div class="value-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+            </div>
+            <h3 class="value-title">Dobre wibracje</h3>
+            <p class="value-description">
+              "Twórz z ciekawością, hojnością, kreatywnością i gotowością do eksperymentowania."
+            </p>
+            <div class="value-tag">Kultura i nastawienie</div>
+          </div>
+
+          <!-- Value 2: Clean Code -->
+          <div class="value-card value-code">
+            <div class="value-card-header">
+              <span class="value-number">02</span>
+              <div class="value-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+            </div>
+            <h3 class="value-title">Czysty kod</h3>
+            <p class="value-description">
+              "Stosuj przemyślaną architekturę, czytelny kod, solidne podstawy i odpowiedzialne praktyki inżynierskie."
+            </p>
+            <div class="value-tag">Rzemiosło i standard</div>
+          </div>
+
+          <!-- Value 3: Limitless Impact -->
+          <div class="value-card value-impact">
+            <div class="value-card-header">
+              <span class="value-number">03</span>
+              <div class="value-icon-wrapper">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+            </div>
+            <h3 class="value-title">Nieograniczony wpływ</h3>
+            <p class="value-description">
+              "Zamieniaj pomysły w użyteczne doświadczenia, które rozwiązują problemy i tworzą realną wartość."
+            </p>
+            <div class="value-tag">Rezultat i cel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 4: Co tworzymy -->
+    <section class="section build-section" id="what-we-build">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">MOŻLIWOŚCI</span>
+          <h2 class="section-title">Od promptu do produkcji</h2>
+          <p class="section-lead">Oto przykłady tego, co członkowie mogą tworzyć dzięki inżynierii wspieranej przez AI i pomocy społeczności.</p>
+        </div>
+
+        <div class="build-grid">
+          <div class="build-card">
+            <span class="build-icon">🤖</span>
+            <h3 class="build-title">Aplikacje AI</h3>
+            <p class="build-desc">Niestandardowe narzędzia wspierane przez AI, inteligentne interfejsy i dziedzinowe aplikacje generatywne.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">💻</span>
+            <h3 class="build-title">Strony i portfolio</h3>
+            <p class="build-desc">Szybkie, dostępne i nowoczesne doświadczenia webowe zbudowane przy użyciu czystego HTML, CSS i JS.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🛠️</span>
+            <h3 class="build-title">Narzędzia programistyczne</h3>
+            <p class="build-desc">CLI, lintery, rozszerzenia i narzędzia usprawniające codzienną pracę programistów.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">⚡</span>
+            <h3 class="build-title">Przepływy automatyzacji</h3>
+            <p class="build-desc">Zautomatyzowane skrypty, webhooki i potoki zadań łączące nowoczesne usługi.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🚀</span>
+            <h3 class="build-title">Produkty SaaS</h3>
+            <p class="build-desc">Proste mikroprodukty typu software-as-a-service tworzone szybko na podstawie szkiców.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🔓</span>
+            <h3 class="build-title">Projekty open source</h3>
+            <p class="build-desc">Publiczne biblioteki, komponenty i narzędzia swobodnie udostępniane społeczności twórców.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🎨</span>
+            <h3 class="build-title">Kreatywne eksperymenty</h3>
+            <p class="build-desc">Generatywna sztuka wizualna, interaktywne shadery canvas, narzędzia audio i prototypy interfejsów.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">📚</span>
+            <h3 class="build-title">Biblioteki promptów</h3>
+            <p class="build-desc">Ustrukturyzowane, wielokrotnego użytku kolekcje promptów systemowych zoptymalizowane pod programowanie i design.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🔌</span>
+            <h3 class="build-title">API i integracje</h3>
+            <p class="build-desc">Czyste wrappery API, konektory middleware oraz usługi REST/GraphQL.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">📈</span>
+            <h3 class="build-title">Narzędzia produktywności</h3>
+            <p class="build-desc">Inteligentne notatniki, menedżery zadań i akceleratory baz wiedzy.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">📊</span>
+            <h3 class="build-title">Doświadczenia danych</h3>
+            <p class="build-desc">Interaktywne pulpity, wizualizacje danych i inteligentne widoki analityczne.</p>
+          </div>
+
+          <div class="build-card">
+            <span class="build-icon">🧠</span>
+            <h3 class="build-title">Autonomiczne agenty AI</h3>
+            <p class="build-desc">Wieloetapowe autonomiczne agenty zdolne do rozumowania, wyszukiwania i wykonywania kodu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 5: Dla kogo? / Profile społeczności -->
+    <section class="section personas-section" id="builders">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">NASZA SPOŁECZNOŚĆ</span>
+          <h2 class="section-title">Dla twórców</h2>
+          <p class="section-lead">Vibe Coders Hub zaprasza twórców z całego świata technologii i designu.</p>
+        </div>
+
+        <div class="personas-grid">
+          <div class="persona-card">
+            <div class="persona-badge">Twórca</div>
+            <h3 class="persona-title">Twórcy AI</h3>
+            <p class="persona-desc">"Osoby wykorzystujące AI do przekształcania pomysłów w kreatywne doświadczenia cyfrowe."</p>
+          </div>
+
+          <div class="persona-card">
+            <div class="persona-badge">Promptowanie</div>
+            <h3 class="persona-title">Inżynierowie promptów</h3>
+            <p class="persona-desc">"Osoby badające, jak ustrukturyzowane prompty mogą usprawnić przepływy pracy AI."</p>
+          </div>
+
+          <div class="persona-card">
+            <div class="persona-badge">Vibe coder</div>
+            <h3 class="persona-title">Vibe coderzy</h3>
+            <p class="persona-desc">"Programiści łączący tradycyjne umiejętności kodowania z programowaniem wspieranym przez AI."</p>
+          </div>
+
+          <div class="persona-card">
+            <div class="persona-badge">Maker</div>
+            <h3 class="persona-title">Indie hackerzy</h3>
+            <p class="persona-desc">"Twórcy zamieniający małe pomysły w użyteczne produkty i eksperymenty."</p>
+          </div>
+
+          <div class="persona-card">
+            <div class="persona-badge">Open source</div>
+            <h3 class="persona-title">Twórcy open source</h3>
+            <p class="persona-desc">"Programiści wierzący, że współpraca czyni oprogramowanie lepszym."</p>
+          </div>
+
+          <div class="persona-card">
+            <div class="persona-badge">Innowacja</div>
+            <h3 class="persona-title">Kreatywni technolodzy</h3>
+            <p class="persona-desc">"Osoby badające pogranicze kodu, AI, designu i kreatywności."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 6: Jak pracujemy / Przepływ pracy -->
+    <section class="section workflow-section" id="workflow">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">PROCES</span>
+          <h2 class="section-title">Jak pracujemy</h2>
+          <p class="section-lead">Sześcioetapowy cykl od iskry wyobraźni do wpływu w realnym świecie.</p>
+        </div>
+
+        <div class="workflow-timeline">
+          <div class="workflow-step">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Wyobraź sobie</h3>
+              <p class="step-desc">Zacznij od problemu, pomysłu, pytania lub śmiałego eksperymentu.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Promptuj</h3>
+              <p class="step-desc">Wykorzystaj AI do badania możliwości, generowania podejść i przyspieszania odkrywania.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Twórz</h3>
+              <p class="step-desc">Zamieniaj pomysły w działające oprogramowanie, korzystając z nowoczesnych praktyk programistycznych.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Dopracuj</h3>
+              <p class="step-desc">Testuj, debuguj, ulepszaj, upraszczaj i poprawiaj doświadczenie użytkownika.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="step-num">05</div>
+            <div class="step-content">
+              <h3 class="step-title">Udostępnij</h3>
+              <p class="step-desc">Dokumentuj drogę, dziel się zdobytą wiedzą i pomagaj innym twórcom.</p>
+            </div>
+          </div>
+
+          <div class="workflow-step">
+            <div class="step-num">06</div>
+            <div class="step-content">
+              <h3 class="step-title">Wpływ</h3>
+              <p class="step-desc">Zamieniaj eksperymenty w użyteczne narzędzia, produkty, projekty lub wiedzę.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 7: Filozofia AI i programowania -->
+    <section class="section philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-box">
+          <div class="philosophy-header text-center">
+            <span class="badge-tag">ETOS INŻYNIERSKI</span>
+            <h2 class="section-title mt-2">Filozofia AI i programowania</h2>
+            <p class="philosophy-quote">„AI pomaga nam działać szybciej. Nie eliminuje jednak potrzeby myślenia.”</p>
+          </div>
+
+          <div class="philosophy-principles-grid">
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Rozumiej wygenerowany kod</h4>
+                <p>Nigdy nie traktuj sugestii AI jak czarnych skrzynek. Analizuj wyniki, rozumiej przepływ sterowania i opanuj logikę.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Dokładnie przeglądaj i audytuj</h4>
+                <p>Przeprowadzaj rygorystyczne przeglądy kodu. AI pomaga w pisaniu, ale ludzki osąd weryfikuje bezpieczeństwo, wydajność i przejrzystość.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Testuj wszystko, co ważne</h4>
+                <p>Automatyzuj testy kluczowej logiki biznesowej, przypadków brzegowych, bezpieczeństwa i dostępności.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Chroń dane i prywatność użytkowników</h4>
+                <p>Oczyszczaj dane wejściowe, unikaj wysyłania wrażliwej telemetrii do zewnętrznych punktów końcowych i przestrzegaj standardów prywatności danych.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Unikaj bezrefleksyjnego kopiowania</h4>
+                <p>Weryfikuj zewnętrzne zależności i wzorce kodu przed dodaniem ich do stosu produkcyjnego.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Utrzymuj czystą architekturę</h4>
+                <p>Dbaj o modułową strukturę, separację odpowiedzialności i spójne nazewnictwo we wszystkich modułach.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>AI jako współpracownik</h4>
+                <p>Traktuj AI jak energicznego programistę do pracy w parze — kogoś, kto pomaga burzą mózgów i tworzy szkice, podczas gdy Ty wyznaczasz kierunek.</p>
+              </div>
+            </div>
+
+            <div class="principle-item">
+              <span class="principle-check">✓</span>
+              <div>
+                <h4>Twórczość i osąd człowieka</h4>
+                <p>Empatia, wyczucie, projektowanie doświadczeń użytkownika i podejmowanie strategicznych decyzji pozostają wyjątkowo ludzkimi umiejętnościami.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 8: Wezwanie do działania społeczności -->
+    <section class="section community-cta-section" id="community">
+      <div class="container text-center">
+        <div class="community-cta-card">
+          <h2 class="cta-title">Masz pomysł? Zbudujmy go.</h2>
+          <p class="cta-lead">
+            Przynieś swoją ciekawość, prompty, kod, eksperymenty i niedokończone pomysły. Przyszłość należy do twórców.
+          </p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">Dołącz do wibracji</a>
+            <a href="#contact" class="btn btn-secondary btn-lg">Wyślij wiadomość</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 9: Kontakt / Formularz wiadomości -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">SKONTAKTUJ SIĘ</span>
+          <h2 class="section-title">Skontaktuj się z Vibe Coders Hub</h2>
+          <p class="section-lead">Masz pytanie, opinię lub chcesz dołączyć do sieci twórców? Napisz do nas poniżej.</p>
+        </div>
+
+        <div class="contact-card-wrapper">
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeaoeenj" method="POST" novalidate>
+            <!-- Pułapka antyspamowa Formspree -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="honeypot-field" aria-hidden="true">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Imię i nazwisko <span class="required-star">*</span></label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g., Alex Rivera" required aria-required="true">
+                <span class="error-msg" id="name-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Adres e-mail <span class="required-star">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="alex@example.com" required aria-required="true">
+                <span class="error-msg" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="reason" class="form-label">Powód kontaktu</label>
+                <select id="reason" name="reason" class="form-select">
+                  <option value="Wiadomość ogólna" selected>Wiadomość ogólna</option>
+                  <option value="Społeczność">Pytanie dotyczące społeczności</option>
+                  <option value="Współpraca">Współpraca</option>
+                  <option value="Projekt">Pomysł na projekt / opinia</option>
+                  <option value="Partnerstwo">Partnerstwo</option>
+                  <option value="Inne">Inne</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Temat <span class="required-star">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="How can we help?" required aria-required="true">
+                <span class="error-msg" id="subject-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Wiadomość <span class="required-star">*</span></label>
+              <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Share your project idea, questions, or comments..." required aria-required="true"></textarea>
+              <span class="error-msg" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit-btn">
+                <span class="btn-text">Wyślij wiadomość</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </div>
+
+            <!-- Komunikaty statusu formularza -->
+            <div class="form-status form-status-success" id="form-success" role="alert" style="display: none;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="status-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span>Wiadomość otrzymana! Dziękujemy za kontakt — wkrótce się odezwiemy.</span>
+            </div>
+
+            <div class="form-status form-status-error" id="form-error" role="alert" style="display: none;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="status-icon"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span id="form-error-text">Nie można teraz wysłać wiadomości. Sprawdź połączenie z siecią lub spróbuj ponownie.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Stopka -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="Strona główna Vibe Coders Hub">
+            <span class="logo-symbol">&lt;/&gt;</span>
+            <span class="logo-text">Vibe Coders <span class="accent-text">Hub</span></span>
+          </a>
+          <p class="footer-tagline">„Dobre wibracje. Czysty kod. Nieograniczony wpływ.”</p>
+          <p class="footer-subtext">Statyczne miejsce pełne dobrej energii dla twórców AI i programistów z całego świata.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Nawigacja</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Start</a></li>
+            <li><a href="#about">O Hubie</a></li>
+            <li><a href="#values">Główne wartości</a></li>
+            <li><a href="#what-we-build">Co tworzymy</a></li>
+            <li><a href="#builders">Dla twórców</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Połącz się z nami</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/joemrnice/vibe-coders-hub.ai" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+            <li><a href="https://www.facebook.com/groups/1379652757208864" target="_blank" rel="noopener noreferrer">Facebook ↗</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a></li>
+            <li><a href="https://www.linkedin.com/groups/42832062" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+            <li><a href="https://discord.gg/YvepMUQZ4" target="_blank" rel="noopener noreferrer">Discord ↗</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p>&copy; <span id="current-year">2025</span> Vibe Coders Hub. Wszelkie prawa zastrzeżone. Zaprojektowano z myślą o statycznym hostingu GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Główny plik JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
